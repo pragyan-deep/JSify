@@ -1,0 +1,21 @@
+{
+  "name": "jsify",
+  "version": "1.0.0",
+  "description": "Just JSify",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "test",
+    "build": "tsc"
+  },
+  "keywords": [
+    "JSify",
+    "sort"
+  ],
+  "author": "Pragyan Deep Gogoi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
+  }
+}
