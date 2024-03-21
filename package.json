@@ -1,17 +1,27 @@
 {
-  "name": "jsify",
-  "version": "1.0.0",
-  "description": "Just JSify",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "@jtsify/jtsify",
+  "version": "1.0.7",
+  "description": "Just JTSify",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "type": "commonjs",
   "scripts": {
     "test": "test",
-    "build": "tsc"
+    "build": "npx tsc"
   },
   "keywords": [
     "JSify",
     "sort"
   ],
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pragyan-deep/JSify.git"
+  },
+  "typings": "build/index",
   "author": "Pragyan Deep Gogoi",
   "license": "ISC",
   "devDependencies": {
