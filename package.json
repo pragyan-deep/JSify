@@ -1,12 +1,12 @@
 {
   "name": "@jtsify/jtsify",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Just JTSify",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "type": "commonjs",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "build": "npx tsc"
   },
   "keywords": [
@@ -25,7 +25,9 @@
   "author": "Pragyan Deep Gogoi",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.11.30",
+    "jest": "^29.7.0",
     "typescript": "^5.4.3"
   }
 }
