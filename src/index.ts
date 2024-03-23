@@ -12,9 +12,10 @@ export const sortBy = <T>(
 	compareFn: (compare: (a: string, b: string) => number, a: T, b: T) => number,
 ): T[] => {
 	if (!Array.isArray(items)) items;
+	const dataToSort = [...items]
 	const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
 	const compare = (a: string, b: string) => collator.compare(String(a).trim(), String(b).trim());
-	return items.sort((a, b) => {
+	return dataToSort.sort((a, b) => {
 		if (sortOrder === "asc") return compareFn(compare, a, b);
 		return compareFn(compare, b, a);
 	});
