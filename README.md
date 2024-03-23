@@ -30,8 +30,10 @@ const jtsify = require('@jtsify/jtsify');
 import { sortBy } from '@jtsify/jtsify';
 //const jtsify = require('@jtsify/jtsify'); // legacy way
 
-const list = [
-    { name: "1 ABC"},
+const jtsify = require("@jtsify/jtsify")
+
+const a = [
+    { name: "1 A"},
     { name: "CBA"},
     { name: "11 A"},
     { name: "ZA"},
@@ -40,5 +42,33 @@ const list = [
     { name: "A1"},
     { name: "ABA"},
     { name: "2 A"},
-]; 
-const sortedList = sortBy(list, "desc", (compare, a, b) => compare(a.name, b.name))
+];
+
+const sortedDsc = jtsify.sortBy(a, "desc", (compare, a, b) => compare(a.name, b.name));
+const sortedAsc = jtsify.sortBy(a, "asc", (compare, a, b) => compare(a.name, b.name));
+
+console.log(sortedAsc)
+// [
+//   { name: '1 A' },
+//   { name: '2 A' },
+//   { name: '11 A' },
+//   { name: 'A1' },
+//   { name: 'AAA' },
+//   { name: 'ABA' },
+//   { name: 'CBA' },
+//   { name: 'VA' },
+//   { name: 'ZA' }
+// ]
+
+console.log(sortedDsc)
+// [
+//   { name: 'ZA' },
+//   { name: 'VA' },
+//   { name: 'CBA' },
+//   { name: 'ABA' },
+//   { name: 'AAA' },
+//   { name: 'A1' },
+//   { name: '11 A' },
+//   { name: '2 A' },
+//   { name: '1 A' }
+// ]

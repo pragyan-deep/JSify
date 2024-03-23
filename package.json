@@ -1,6 +1,6 @@
 {
   "name": "@jtsify/jtsify",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Just JTSify",
   "main": "build/index.js",
   "types": "build/index.d.ts",
