@@ -31,7 +31,7 @@ import { sortBy } from '@jtsify/jtsify';
 //const jtsify = require('@jtsify/jtsify'); // legacy way
 
 const list = [
-    { name: "1 AB"},
+    { name: "1 ABC"},
     { name: "CBA"},
     { name: "11 A"},
     { name: "ZA"},
