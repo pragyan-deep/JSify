@@ -44,10 +44,8 @@ const a = [
     { name: "2 A"},
 ];
 
-const sortedDsc = jtsify.sortBy(a, "desc", (compare, a, b) => compare(a.name, b.name));
 const sortedAsc = jtsify.sortBy(a, "asc", (compare, a, b) => compare(a.name, b.name));
-
-console.log(sortedAsc)
+// Result:  
 // [
 //   { name: '1 A' },
 //   { name: '2 A' },
@@ -60,7 +58,8 @@ console.log(sortedAsc)
 //   { name: 'ZA' }
 // ]
 
-console.log(sortedDsc)
+const sortedDsc = jtsify.sortBy(a, "desc", (compare, a, b) => compare(a.name, b.name));
+// Result:  
 // [
 //   { name: 'ZA' },
 //   { name: 'VA' },
